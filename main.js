@@ -1,10 +1,9 @@
 import * as THREE from 'three'; 
 import "./style.css";
+// import "./assets/globe/globe1.glft";
+import $ from "jquery";
 import gsap from "gsap";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-import {CameraHelper} from 'three';
-import {FlyControls} from 'three/examples/jsm/controls/FlyControls';
 
 //Scene---------------------------------------------------
 const scene = new THREE.Scene();
@@ -218,7 +217,7 @@ $(document).ready(function() {
         "opacity" : 1
       }, 1000)
 
-      $(body).animate({
+      $('body').animate({
         "background-color" : "red"
       }, 1000)
     }
