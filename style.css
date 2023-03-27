@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+  background-color: #0f6c8b;
+  font-family: Josefin Sans;
+}
+
+.webgl{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1;
+  /* animation: slideIn 3s ease-in-out; */
+}
+
+.hide{
+  display:none;
+}
+
+/* .modelCont{
+  height: 100vh;
+  width:33%;
+  position: fixed;
+  margin-left: 66%;
+  background-color: #fff;
+} */
+
+@keyframes slideIn{
+  0%{
+    top: 100%;
+  }
+  100%{
+    top: 0%
+  }
+}
+
+.aboutSect{
+  position: relative;
+}
+
+.container{
+	margin-left:auto;
+	margin-right:auto;
+  position: relative;
+  z-index: 2;
+}
+
+.flexParent{
+  display: flex;
+}
+
+.arrow{
+  animation: arrowDown 3s ease-in-out;
+}
+
+@keyframes arrowDown{
+  0%, 50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.fororm{
+  justify-content: space-between;
+}
+
+h1{
+  color: #F4FFFE;
+  font-weight: 700;
+  position: absolute;
+  animation: titleSlide 1.5s ease-out;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes titleSlide{
+  0%{
+    left: -100%;
+  }
+  100%{
+    left:0;
+  }
+}
+
+input::placeholder{
+  color: #F4FFFE;
+  opacity: 50%;
+}
+
+
+h2{
+  color: #F4FFFE;
+}
+
+h4{
+  color: #F4FFFE;
+  font-weight: 500;
+}
+
+p{
+  color: #F4FFFE;
+  font-weight: 300;
+}
+
+.oof .aboutSect{
+  padding-top: 0;
+}
+
+.emailDiv{
+  width: 48.4662%;
+  
+}
+
+.emailForm{
+  padding-top: 1.2vw;
+}
+
+label{
+  color: #F4FFFE;
+}
+
+#email, #name{
+  background-color: transparent;
+  color: #F4FFFE;
+  font-family: Josefin Sans;
+  padding-left: 0;
+  border: none;
+  border-bottom: solid #F4FFFE;
+}
+
+/*Field1 - First Name, Field2 - Last Name, Field4 - State*/
+#Field1, #Field2, #Field4{
+  background-color: transparent;
+  color: #F4FFFE;
+  font-family: Josefin Sans;
+  padding-left: 0;
+  border: none;
+  border-bottom: solid #F4FFFE;
+}
+
+
+#Field1, #Field2{
+  width: 90%;
+}
+
+#Field4{
+ width: 100%;
+ margin-top: 2vw;
+}
+
+.radioChoice{
+  width: 100%;
+}
+
+fieldset{
+  border: none;
+  color: #4163a7;
+}
+
+select{
+  background-color: transparent;
+  color: #F4FFFE;
+  font-family: Josefin Sans;
+  border: none;
+  border-bottom: solid #F4FFFE;
+}
+
+/* #submitBtn, .submitBtn{
+  color: #F4FFFE;
+  font-family: Josefin Sans;
+  border: solid #F4FFFE;
+  text-shadow: none;
+  background-image: none;
+  background-color: transparent;
+  transition: 0.2s;
+} */
+
+input[type="submit"]{
+  font-family: Josefin Sans;
+  background:transparent;
+  text-shadow: none;
+  border: solid #F4FFFE;
+  color: #F4FFFE;
+  transition: 0.25s;
+}
+
+input[type="submit"]:hover{
+  background:#F4FFFE;
+  text-shadow: none;
+  color: #000000;
+}
+
+input[type="email"]{
+  font-family: Josefin Sans;
+  background:transparent;
+  border:none; 
+  border-bottom: solid #F4FFFE;
+  display: block;
+  color: #F4FFFE;
+}
+
+.radioChoice{
+  display: block;
+}
+
+.one, .two, .three, .four, .five{
+  opacity: 0;
+}
+
+#title5{
+  color: #F4FFFE;
+  margin-bottom: 2vw;
+}
+
+
+/* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 767px){
+	.container{
+		width:87.5%; /* 280 pixels at a 320 pixel screen width (iPhone 3 / 4 / 5) */
+	}
+
+  .arrow{
+    position: absolute;
+    top:40vw;
+    width: 15px;
+    height: 135px;
+  }
+
+  .flexParent{
+    display: block;
+  }
+
+  h1{
+    font-size: 10vw;
+    width: 74.2331%;
+  }
+
+  .hero{
+    height: 100vh;
+    padding-top: 5vw;
+  }
+
+  h2{
+    font-size:6vw;
+    padding-bottom: 1.5vw;
+    width: 57.0552%;
+  }
+
+  h4{
+    font-size: 4vw;
+    width: 57.0552%;
+    padding-bottom: 1.5vw;
+  }
+  
+  p{
+    width: 55%;
+    font-size: 3.5vw
+  }
+
+  .aboutSect{
+    padding-bottom: 500px;
+    padding-top: 500px;
+  }
+
+  .formP p{
+    width: 100%;
+    margin-left:0;
+    font-size: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .emailDiv{
+    width: 100%;
+    margin-top: 1.5vw;
+  }
+
+  input::placeholder{
+    font-size: 4vw;
+  }
+
+  .flexParentM{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+  }
+
+  .petition{
+    width: 100%;
+  }
+
+  input[type="submit"]{
+    font-size: 5vw;
+    width: 30%;
+    display: block;
+    padding: 0;
+  }
+
+  /*------- Radio --------*/
+  /*----- Text*/
+  label{
+    font-size: 5vw;
+    color: #F4FFFE;
+  } 
+  /* Label for email */
+
+  input[type="email"]{
+    display: block;
+    padding-top: 3vw;
+    width: 100%;
+    margin-top: 2.5vw;
+    padding-bottom: 1.75vw;
+    font-size: 4vw;
+  }
+
+  #Field1, #Field2{
+    width: 100%;
+    font-size: 4vw;
+  }
+  
+  #Field4{
+   width: 100%;
+   margin-top: 2vw;
+   margin-bottom: 8vw;
+   font-size: 4vw;
+  }
+
+  #saveForm1, #saveForm2{
+    padding-top: 0.75vw;
+  } /*For submit button*/
+
+  #saveForm1{
+    margin-top: 6vw;
+  }
+
+  #saveForm2{
+   display: block;
+   margin-top: 6vw;
+  }
+
+  .notranslate{
+    font-size: 5vw;
+  } /*Radio Choice Font*/
+
+  .radioChoice{
+    margin-bottom: 1.5vw;
+  }
+
+  #title5{
+    font-size: 5vw;
+    margin-bottom: 3vw;
+  } /*For Concern Label*/
+
+  .spanLabel{
+    width: 48%;
+  }/*Keeps width of First and Last Name*/
+
+  
+  .finalSect{
+    margin-bottom: 55vh;
+  }
+
+  /* .emailDiv{
+    width: 100%;
+  }
+
+  label{
+    font-size: 4vw;
+    color: #F4FFFE;
+  }
+  
+  #email, #name{
+    width: 100%;
+    padding: 1vw;
+    padding-left: 0;
+    font-size: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+  }
+
+  select{
+    font-size: 3vw;
+    margin-top: 1.51vw;
+  }
+
+  .flexParentM{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+  }
+
+  input[type="submit"]{
+    font-family: Josefin Sans;
+    font-size: 3vw;
+    background:transparent;
+    text-shadow: none;
+    border: solid #F4FFFE;
+    color: #F4FFFE;
+    padding-top: 1.5vw;
+    width: 19.643%;
+    display: block;
+  }
+
+  input[type="email"]{
+    font-family: Josefin Sans;
+    background:transparent;
+    border:none; 
+    border-bottom: solid #F4FFFE;
+    display: block;
+    padding-top: 3vw;
+    color: #F4FFFE;
+    width: 73.2143%;
+    padding-bottom: 2.8vw;
+  }
+
+  #Field1, #Field2{
+    width: 100%;
+  }
+  
+  #Field4{
+   width: 100%;
+   margin-top: 2vw;
+   margin-bottom: 6vw;
+  }
+
+  #saveForm{
+    margin-top: 4vw;
+  }
+
+  .notranslate{
+    font-size: 4vw;
+  }
+
+  .radioChoice{
+    margin-bottom: 2vw;
+  }
+
+  #title5{
+    font-size: 5vw;
+  }
+
+  .radioCont{
+    margin-top: 5vw;
+  }
+
+  .spanLabel{
+    width: 48%;
+  }
+
+  .stateLabel{
+    width: 50%;
+  }
+
+  #Field12{
+    width: 73.2143%;
+  }
+
+  .finalSect{
+    margin-bottom: 55vh;
+  } */
+}
+
+/* TABLET STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.container{
+		width:93.75%; /* 720 pixels at a 768 pixel screen width (iPads) */
+	}
+
+  .arrow{
+    position: absolute;
+    bottom: 0;
+    width: 25px;
+    height: 225px;
+  }
+
+  h1{
+    font-size: 7vw;
+    width: 74.2331%;
+  }
+  
+  .hero{
+    height: 100vh;
+    padding-top: 5vw;
+  }
+  
+  h2{
+    font-size: 4.5vw;
+    padding-bottom: 1.5vw;
+    width: 57.0552%;
+  }
+  
+  h4{
+    font-size: 3vw;
+    width: 57.0552%;
+    margin-left: 4.2945%;
+    padding-bottom: 1.5vw;
+  }
+  
+  p{
+    width: 39.8773%;
+    margin-left: 8.589%;
+    font-size: 1.8vw
+  }
+  
+  .aboutSect{
+    padding-bottom: 300px;
+    padding-top: 300px;
+  }
+  
+  .oof .aboutSect{
+    padding-top: 0;
+  }
+  
+  .p1{
+    width: 31.2883%;
+    display: inline;
+  }
+  
+  .p2{
+    display: inline;
+    margin-left: 3.0675%;
+    width: 31.2883%;
+  }
+  
+  /*--------- Form ------------*/
+  .formP{
+    margin-left: 0;
+    width: 48.4662%;
+    margin-top: 0;
+  }
+  
+  .formP p{
+    width: 100%;
+    margin-left:0;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+  }
+
+  .emailDiv{
+    width: 48.4662%;
+    margin-top: 1.5vw;
+  }
+
+  input::placeholder{
+    font-size: 3vw;
+  }
+
+  .flexParentM{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+  }
+
+  input[type="submit"]{
+    font-size: 3vw;
+    width: 48.4662%;
+    display: block;
+  }
+
+  /*------- Radio --------*/
+  /*----- Text*/
+  label{
+    font-size: 4vw;
+    color: #F4FFFE;
+  } 
+  /* Label for email */
+
+  input[type="email"]{
+    display: block;
+    padding-top: 3vw;
+    width: 100%;
+    margin-top: 2.5vw;
+    padding-bottom: 1.75vw;
+    font-size: 3vw;
+  }
+
+  #Field1, #Field2{
+    width: 100%;
+    font-size: 3vw;
+  }
+  
+  #Field4{
+   width: 100%;
+   margin-top: 2vw;
+   margin-bottom: 6vw;
+   font-size: 3vw;
+  }
+
+  #saveForm1, #saveForm2{
+    padding-top: 0.75vw;
+  } /*For submit button*/
+
+  #saveForm1{
+    margin-top: 3vw;
+  }
+
+  #saveForm2{
+   display: block;
+   margin-top: 3vw;
+  }
+
+  .notranslate{
+    font-size: 3vw;
+  } /*Radio Choice Font*/
+
+  .radioChoice{
+    margin-bottom: 1vw;
+  }
+
+  #title5{
+    font-size: 3vw;
+  } /*For Concern Label*/
+
+  .spanLabel{
+    width: 48%;
+  }/*Keeps width of First and Last Name*/
+
+  
+  .finalSect{
+    margin-bottom: 55vh;
+  }
+}
+
+
+
+/* DESKTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 1025px){
+	.container{
+		/*width:978px;*/
+		width:95.5%;
+	}
+
+  .arrow{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 450px;
+  }
+
+  /* .modelCont{
+    height: 100vh;
+    width:33%;
+    position: fixed;
+    margin-left: 66%;
+    background-color: #fff;
+  } */
+
+  h1{
+    font-size: 6vw;
+    width: 74.2331%;
+  }
+
+  .hero{
+    height: 100vh;
+    margin-bottom: 1000px;
+    padding-top: 1.5vw;
+  }
+
+  h2{
+    font-size: 4vw;
+    padding-bottom: 1.5vw;
+    width: 57.0552%;
+  }
+
+  h4{
+    font-size: 2vw;
+    width: 57.0552%;
+    margin-left: 4.2945%;
+    padding-bottom: 1.5vw;
+  }
+  
+  p{
+    width: 39.8773%;
+    margin-left: 8.589%;
+    font-size: 1.5vw
+  }
+
+  .aboutSect{
+    padding-bottom: 500px;
+    padding-top: 500px;
+  }
+
+  .oof .aboutSect{
+    padding-top: 0;
+  }
+
+  .p1{
+    width: 31.2883%;
+    display: inline;
+  }
+
+  .p2{
+    display: inline;
+    margin-left: 3.0675%;
+    width: 31.2883%;
+  }
+  
+  .formP{
+    margin-left: 0;
+    width: 48.4662%;
+  }
+
+  .formP p{
+    width: 100%;
+    margin-left:0;
+    font-size: 2vw;
+  }
+
+  .emailDiv{
+    width: 48.4662%;
+    margin-top: 1vw;
+  }
+
+  input::placeholder{
+    font-size: 1.5vw;
+  }
+
+  .flexParentM{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+  }
+
+  input[type="submit"]{
+    font-size: 1.5vw;
+    width: 20%;
+    display: block;
+  }
+
+  /*------- Radio --------*/
+  /*----- Text*/
+  label{
+    font-size: 2vw;
+    color: #F4FFFE;
+  } 
+  /* Label for email */
+
+  input[type="email"]{
+    display: block;
+    padding-top: 2vw;
+    width: 100%;
+    margin-top: 1vw;
+    padding-bottom: 1.25vw;
+    font-size: 1.5vw;
+  }
+
+  #Field1, #Field2{
+    width: 100%;
+    font-size: 1.5vw;
+  }
+  
+  #Field4{
+   width: 48.4662%;
+   margin-top: 1vw;
+   margin-bottom: 3vw;
+   font-size: 1.5vw;
+  }
+
+  #saveForm1, #saveForm2{
+    padding-top: 0.75vw;
+  } /*For submit button*/
+
+  #saveForm1{
+    margin-top: 2.5vw;
+  }
+
+  #saveForm2{
+   display: block;
+   margin-top: 2vw;
+  }
+
+  .notranslate{
+    font-size: 1.5vw;
+  } /*Radio Choice Font*/
+
+  .radioChoice{
+    margin-bottom: 1vw;
+  }
+
+  #title5{
+    font-size: 2vw;
+  } /*For Concern Label*/
+
+  .spanLabel{
+    width: 48%;
+  }/*Keeps width of First and Last Name*/
+
+  .finalSect{
+    margin-bottom: 55vh;
+  }
+
+}
