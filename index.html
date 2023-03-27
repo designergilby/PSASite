@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.3.js" ></script>
+    <title>CityScape</title>
+    <script type="module" crossorigin src="/assets/index-4e9ec081.js"></script>
+    <link rel="stylesheet" href="/assets/index-d8f0b26e.css">
+  </head>
+  <body>
+    <canvas class="webgl">
+    </canvas>
+    <div class="hero">
+      <div class="container oof">
+        <h1 class="mainTitle aboutSect">SAVE THE<br>BOUNDARY WATERS</h1>
+        <img class="arrow" src="data:image/png;base64,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"/>
+      </div>
+    </div>
+    <div class="container aboutSect one">
+
+      <h2>What are the<br>Boundary Waters?</h2>
+      <h4>A staple of Minnesota Wilderness</h4>
+      <p>The Boundary Waters is a region of protected wilderness on the Northeastern boarder of Minnesota. A quarter of a million people visit every year to marvel at it’s beauty. But now, it faces being wiped out.</p>
+    </div>
+
+    <div class="container aboutSect issue two">
+
+      <h2>What's the Issue?</h2>
+      <h4>Pollution puts the park in jepordy</h4>
+      <p>Within the last few years, proposals to create a sulfide ore mining operation in the Boundary Waters area have been slowly making their way to becoming reality. This type of mining has never been done in Minnesota and can have huge ramification on many aspect of the area, as well as causing global pollution. </p>
+    </div>
+
+    <div class="container aboutSect risk three">
+
+      <h2>What’s at risk?</h2>
+      <h4>A staple of Minnesota Wilderness</h4>
+      <p>Sulfide mining is considered America’s most toxic industry. Scientists have determined that the proposed mining operation would have detrimental effects on the Boundary Water’s ecosystem. Toxic waste fram the industry can make it’s way down stream and permenantly damage the area’s water sources. </p>
+    </div>
+
+    <div class="container aboutSect who four">
+
+      <h2>Who will this Effect?</h2>
+      <h4>Any inhabitants may loose their livelihood</h4>
+      <p>The main victim of this industry would be the wildlife living in the area. Their water sources would be polluted with toxic waste and their habitats would be destroyed. Without the wildlife in the park, the Boundary Waters experience isn’t the same.</p>
+    </div>
+
+    <div class="container aboutSect help five">
+      <h1>How can you help?</h1>
+    </div>
+
+    <div class="container aboutSect six">
+      <h2 class="petition">Sign the Petition!</h2>
+      <div class="flexParent fororm">
+        <div class="formP">
+          <p>One of the most important things you can do to prevent further exploration is to make your voice heard. These endevors are fought at the federal level, so let your US representative know your stance by filling out the form below.  </p>
+        </div>
+        <div class="emailDiv">
+          <form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://designergilby.wufoo.com/forms/m1a8lcy202vsiwy/#public">
+            <div class="flexParentM">
+            <span class="spanLabel">
+              <input id="Field1" class="fName" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="0" placeholder="First Name"       />
+            </span>
+            <span class="spanLabel">
+              <input id="Field2" class="lName" name="Field2" type="text" class="field text ln" value="" size="14" tabindex="0" placeholder="Last Name" />
+            </span>
+            </div>
+            <span class="spanLabel">
+            <div class="stateDiv">
+              <input id="Field4" class="state" name="Field4" type="text" class="" value=""       maxLength="255" tabindex="0" onkeyup=""       placeholder="State" />
+            </div>
+            </span>
+              <legend id="title5" class="desc notranslate">
+              What's your biggest concern?
+              </legend>
+          <!--[if lt IE 8]>
+          <label id="title5" class="desc">
+          What's your biggest concern?
+          </label>
+          <![endif]-->
+              <div>
+                <input id="radioDefault_5" name="Field5" type="hidden" value="" />
+                  <span class="radioChoice">
+                    <input id="Field5_0"     name="Field5"     type="radio"     class="radio"     value="To save the ecosystem!"     tabindex="0"         onchange=""             checked="checked"                     />
+                    <label class="choice" for="Field5_0"     >
+                      <span class="choice__text notranslate">To save the ecosystem!</span>
+                      <span class="choice__qty"></span>
+                    </label>
+                  </span>
+                  <span class="radioChoice">
+                    <input id="Field5_1"     name="Field5"     type="radio"     class="radio"     value="To support the local economy!"     tabindex="0"         onchange=""                         />
+                      <label class="choice" for="Field5_1"     >
+                      <span class="choice__text notranslate">To support the local economy!</span>
+                      <span class="choice__qty"></span>
+                    </label>
+            </span>
+            <span class="radioChoice">
+            <input id="Field5_2"     name="Field5"     type="radio"     class="radio"     value="To Prevent Pollution!"     tabindex="0"         onchange=""                         />
+            <label class="choice" for="Field5_2"     >
+              <span class="choice__text notranslate">To Prevent Pollution!</span>
+                    <span class="choice__qty">
+                        </span>
+            </label>
+              </span>
+          </div>
+          </fieldset>
+          
+          
+          <div>
+              
+          <input id="saveForm1" class="submitBtn" name="saveForm" class="btTxt submit" type="submit" value="Submit"/>    
+          
+          </div>
+          
+          
+          <div class="hide">
+            <label for="comment">Do Not Fill This Out</label>
+            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+            <input type="hidden" id="idstamp" name="idstamp" value="JeEpMm2jcsbWxpAuFsUFeQlLmePIXTYyBmOAUY+bY0o=" >
+            <input type="hidden" id="encryptedPassword" name="encryptedPassword" value="" >
+          </div>
+          
+          
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container finalSect seven">
+      <h2>Keep up to date!</h2>
+      <div class="flexParent fororm">
+        <div class="formP">
+          <p>Let the Saving the Boundary Waters keep you up to date on the latest news regarding the park! 
+
+            Includes special promotions, volunteer opportunities, events and updates on threats the park faces.</p>
+        </div>
+        <div class="emailDiv">
+          <form id="form1" name="form1" class="emailForm" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://designergilby.wufoo.com/forms/zlvq7z81o43vhm/#public">
+            <label class="textInputs" id="title1" for="Field1">Join the Mailing List!</label>
+            <div>
+              <input id="Field12" name="Field1" type="email" spellcheck="false" class="textInputs" value="" maxlength="255" tabindex="0" placeholder="Email" />
+              <input id="saveForm2" name="saveForm" class="submitBtn" type="submit" value="Submit"/> 
+            </div>   
+            <div class="hide">
+              <label for="comment">Do Not Fill This Out</label>
+              <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+              <input type="hidden" id="idstamp" name="idstamp" value="I2uYB1I9my+pihzISbRwxjR1351CntKILmFvEbpCQ/0=" >
+              <input type="hidden" id="encryptedPassword" name="encryptedPassword" value="" >
+            </div>
+          </form>
+          <!-- <form class="emailForm">
+            <label class="textInputs" for="email">Join the Email List.</label>
+            <input type="text" class="textInputs" id="email" class="email" placeholder="email" />
+            <input type="submit" id="submitBtn" value="Submit"/>
+          </form> -->
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
+
+<!-- <form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://designergilby.wufoo.com/forms/m1a8lcy202vsiwy/#public">
+
+  <label class="desc" id="title1">Name</label>
+  <span>
+    <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="0" placeholder="First Name"       />
+  </span>
+  <span>
+    <input id="Field2" name="Field2" type="text" class="field text ln" value="" size="14" tabindex="0" placeholder="Last Name" />
+  </span>
+  <div>
+    <input id="Field4" name="Field4" type="text" class="field text medium" value=""       maxLength="255" tabindex="0" onkeyup=""       placeholder="State" />
+  </div>
+  <fieldset></fieldset>
+    <legend id="title5" class="desc notranslate">
+    What's your biggest concern?
+    </legend>
+[if lt IE 8]>
+<label id="title5" class="desc">
+What's your biggest concern?
+</label>
+<![endif]
+    <div>
+      <input id="radioDefault_5" name="Field5" type="hidden" value="" />
+        <span>
+          <input id="Field5_0"     name="Field5"     type="radio"     class="field radio"     value="To save the ecosystem!"     tabindex="0"         onchange=""             checked="checked"                     />
+          <label class="choice" for="Field5_0"     >
+            <span class="choice__text notranslate">To save the ecosystem!</span>
+            <span class="choice__qty"></span>
+          </label>
+    </span>
+  <span>
+  <input id="Field5_1"     name="Field5"     type="radio"     class="field radio"     value="To support the local economy!"     tabindex="0"         onchange=""                         />
+  <label class="choice" for="Field5_1"     >
+    <span class="choice__text notranslate">To support the local economy!</span>
+          <span class="choice__qty">
+              </span>
+  </label>
+    </span>
+  <span>
+  <input id="Field5_2"     name="Field5"     type="radio"     class="field radio"     value="To Prevent Pollution!"     tabindex="0"         onchange=""                         />
+  <label class="choice" for="Field5_2"     >
+    <span class="choice__text notranslate">To Prevent Pollution!</span>
+          <span class="choice__qty">
+              </span>
+  </label>
+    </span>
+</div>
+</fieldset>
+
+
+<div>
+    
+<input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit"/>    
+
+</div>
+
+
+<div class="hide">
+  <label for="comment">Do Not Fill This Out</label>
+  <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+  <input type="hidden" id="idstamp" name="idstamp" value="JeEpMm2jcsbWxpAuFsUFeQlLmePIXTYyBmOAUY+bY0o=" >
+  <input type="hidden" id="encryptedPassword" name="encryptedPassword" value="" >
+</div>
+
+
+</form> -->
