@@ -640,9 +640,9 @@ input[type="email"]{
 
   .arrow{
     position: absolute;
-    bottom: 0;
-    width: 50px;
-    height: 450px;
+    bottom: 10vw;
+    width: 25px;
+    height: 225px;
   }
 
   /* .modelCont{
