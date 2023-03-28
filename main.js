@@ -1,10 +1,8 @@
 import * as THREE from 'three'; 
 import "./style.css";
-// import "./assets/globe/globe1.glft";
 import $ from "jquery";
 import gsap from "gsap";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-
 
 //Scene---------------------------------------------------
 const scene = new THREE.Scene();
@@ -13,7 +11,7 @@ const scene = new THREE.Scene();
 const gltfLoader = new GLTFLoader();
 var worldModel;
 var group;
-gltfLoader.load('/globe/globe1.gltf', function (glft) {
+gltfLoader.load('assets/globe/globe1.gltf', function (glft) {
   worldModel = glft.scene.children.find((child) => child.name === "Globe");
   group = new THREE.Group();
   group.rotation.z = 11;
