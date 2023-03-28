@@ -11,7 +11,7 @@ const scene = new THREE.Scene();
 const gltfLoader = new GLTFLoader();
 var worldModel;
 var group;
-gltfLoader.load('assets/globe/globe1.gltf', function (glft) {
+gltfLoader.load('./globe/globe1.gltf', function (glft) {
   worldModel = glft.scene.children.find((child) => child.name === "Globe");
   group = new THREE.Group();
   group.rotation.z = 11;
