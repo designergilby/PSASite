@@ -215,16 +215,16 @@ $(document).ready(function() {
       $(".one").animate({
         "opacity" : 1
       }, 1000)
-
-      $('body').animate({
-        "background-color" : "red"
-      }, 1000)
     }
 
     if(currentSection == 2){
       $(".two").animate({
         "opacity" : 1
       }, 1000)
+
+      $("body").animate({
+        "background-color" : "#000000"
+      }, 500)
     }
 
     if(currentSection == 3){
